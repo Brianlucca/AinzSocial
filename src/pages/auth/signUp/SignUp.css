@@ -1,0 +1,127 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup__section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.signup__header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.signup__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.signup__form {
+    display: grid;
+    gap: 16px;
+}
+
+.signup__label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.signup__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.signup__login-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.signup__login-button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.signup__login-button:hover {
+    background-color: #0056b3;
+}
+
+.signup__register {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.signup__register-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.signup__register-link:hover {
+    text-decoration: underline;
+}
+
+.signup__google-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.signup__google-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.signup__google-image {
+    width: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .signup__section {
+        padding: 24px;
+    }
+
+    .signup__title {
+        font-size: 20px;
+    }
+
+    .signup__input {
+        font-size: 14px;
+    }
+
+    .signup__login-button,
+    .signup__google-button {
+        font-size: 14px;
+    }
+
+    .signup__register {
+        font-size: 12px;
+    }
+}
