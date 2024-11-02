@@ -1,0 +1,127 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signin__section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.signin__header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.signin__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.signin__form {
+    display: grid;
+    gap: 16px;
+}
+
+.signin__label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.signin__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.signin__login-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.signin__login-button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.signin__login-button:hover {
+    background-color: #0056b3;
+}
+
+.signin__register {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.signin__register-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.signin__register-link:hover {
+    text-decoration: underline;
+}
+
+.signin__google-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.signin__google-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.signin__google-image {
+    width: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .signin__section {
+        padding: 24px;
+    }
+
+    .signin__title {
+        font-size: 20px;
+    }
+
+    .signin__input {
+        font-size: 14px;
+    }
+
+    .signin__login-button,
+    .signin__google-button {
+        font-size: 14px;
+    }
+
+    .signin__register {
+        font-size: 12px;
+    }
+}
